@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const APP_ROUTES: Routes = [
-  { path: '*', loadChildren: './pages/home/home.module#HomeModule'},
+  { path: '**', loadChildren: './pages/home/home.module#HomeModule'},
   { path: 'tours', loadChildren: './pages/tours/tours.module#ToursModule'},
   { path: 'team', loadChildren: './pages/team/team.module#TeamModule'},
   { path: 'blog', loadChildren: './pages/blog/blog.module#BlogModule'},

@@ -1,0 +1,46 @@
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  border-bottom: 1px solid rgb(34, 34, 34);
+  padding: 15px;
+  justify-content: space-between;
+
+  a {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Montserrat,'Arial Black',sans-serif;
+    border-radius: 4px;
+    font-weight: 700;
+    &:hover {
+      @extend .active;
+    }
+  }
+}
+
+.links {
+  margin: 0 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  background: url('/assets/steel-team.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.active {
+    background-color: rgb(204, 9, 47);
+}
+
+.controls {
+  display: flex;
+}

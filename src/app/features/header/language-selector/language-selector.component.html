@@ -1,0 +1,10 @@
+<div class="option-wrapper">
+  <div class="option selected">
+      <img [src]="selected.imageUrl"/>
+  </div>
+  <div class="options" *ngIf="active">
+    <div class="option" *ngFor="let lang of languages">
+      <img [src]="lang.imageUrl" />
+    </div>
+  </div>
+</div>
