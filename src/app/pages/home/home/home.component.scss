@@ -1,0 +1,12 @@
+app-texted-screen {
+  margin-bottom: 20px;
+  display: block;
+
+  &:first-child {
+    margin-top: 80px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
