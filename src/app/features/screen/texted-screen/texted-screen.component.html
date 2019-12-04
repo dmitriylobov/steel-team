@@ -1,1 +1,8 @@
-<p>texted-screen works!</p>
+<div class="wrapper" style.background-image="url({{config.backgroundImage}})" [style.height]="config.height">
+  <div class="main-container">
+    <h1>{{ config.heading }}</h1>
+    <h2>{{ config.subheading }}</h2>
+    <p>{{ config.text }}</p>
+    <a routerLink="{{ config.url }}">{{ config.linkName }}</a>
+  </div>
+</div>
