@@ -1,1 +1,12 @@
-<p>blog-item works!</p>
+<div class="wrapper">
+  <div class="img">
+    <img [src]="item.imageSrc" alt="BLOG_IMAGE"/>
+  </div>
+  <div class="text">
+    <div class="tag">
+      <span *ngFor="let tag of item.tag">{{tag}}</span>
+    </div>
+    <h4>{{item.heading}}</h4>
+    <span class="tag date">{{item.date | date : 'short'}}</span>
+  </div>
+</div>
