@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HeaderModule} from "./features/header/header.module";
+import {HeaderModule} from './features/header/header.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {FooterModule} from './features/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     HeaderModule,
+    FooterModule,
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule
@@ -20,3 +22,4 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

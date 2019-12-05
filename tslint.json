@@ -25,6 +25,7 @@
       true,
       "rxjs/Rx"
     ],
+    "whitespace": [true, "check-branch", "check-operator", "check-typecast"],
     "interface-name": false,
     "max-classes-per-file": false,
     "max-line-length": [
@@ -71,7 +72,7 @@
       true,
       "single"
     ],
-    "trailing-comma": false,
+    "trailing-comma": true,
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,

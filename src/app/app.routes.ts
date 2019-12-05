@@ -8,5 +8,5 @@ export const APP_ROUTES: Routes = [
   { path: 'contacts', loadChildren: './pages/contacts/contacts.module#ContactsModule'},
   { path: 'join', loadChildren: './pages/sign/sign.module#SignModule'},
   { path: 'reviews', loadChildren: './pages/reviews/reviews.module#ReviewsModule'},
-  { path: '*', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
 ];

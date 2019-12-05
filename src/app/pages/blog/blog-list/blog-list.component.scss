@@ -1,0 +1,14 @@
+.blog-wrapper {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+app-blog-item {
+  display: block;
+  width: 30%;
+  margin: 30px 1%;
+  background-color: white;
+  cursor: pointer;
+}
