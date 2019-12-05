@@ -15,7 +15,10 @@ import {RouterModule} from '@angular/router';
   declarations: [ToursListComponent, TourItemComponent, TourPageComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild([{path: '', component: ToursListComponent}]),
+    RouterModule.forChild([
+      {path: '', component: ToursListComponent},
+      {path: 'page', component: TourPageComponent},
+    ]),
   ]
 })
 export class ToursModule { }
