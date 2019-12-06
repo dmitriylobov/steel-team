@@ -15,6 +15,7 @@ export const DUMMY_HTML = `
           Sed laoreet in ante ac feugiat. In nec nibh et risus imperdiet malesuada nec ac ipsum.
        Phasellus sit amet consequat arcu, et sollicitudin nibh.</p>
       <h4>Praesent vestibulum sapien nec euismod dapibus.</h4>
+       <img src="https://www.garmin.com/en-US/blog/wp-content/uploads/2019/09/4000-rescue-image2-1024x626.jpg" alt="blog image"/>
       <p>Cras rhoncus lorem purus, eget venenatis erat tincidunt in.
        Phasellus convallis iaculis tempor.
         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
@@ -24,6 +25,17 @@ export const DUMMY_HTML = `
           Aenean sed tortor sollicitudin, hendrerit eros ut, iaculis ante. Nulla facilisi.
           Sed laoreet in ante ac feugiat. In nec nibh et risus imperdiet malesuada nec ac ipsum.
        Phasellus sit amet consequat arcu, et sollicitudin nibh.</p>
+      <h4>Praesent vestibulum sapien nec euismod dapibus.</h4>
+      <p>Cras rhoncus lorem purus, eget venenatis erat tincidunt in.
+       Phasellus convallis iaculis tempor.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+         Sed pharetra, justo nec tristique pellentesque, mi tellus sollicitudin dui, vitae gravida orci velit a libero.
+          Phasellus dapibus tortor sit amet neque varius, nec facilisis purus laoreet. Nulla facilisi.
+          Pellentesque tincidunt rhoncus elementum. Vivamus commodo in nulla sit amet vehicula.
+          Aenean sed tortor sollicitudin, hendrerit eros ut, iaculis ante. Nulla facilisi.
+          Sed laoreet in ante ac feugiat. In nec nibh et risus imperdiet malesuada nec ac ipsum.
+       Phasellus sit amet consequat arcu, et sollicitudin nibh.</p>
+       <img src="https://www.garmin.com/en-US/blog/wp-content/uploads/2019/09/4000-rescue-image2-1024x626.jpg" alt="blog image"/>
       <h4>Praesent vestibulum sapien nec euismod dapibus.</h4>
       <p>Cras rhoncus lorem purus, eget venenatis erat tincidunt in.
        Phasellus convallis iaculis tempor.

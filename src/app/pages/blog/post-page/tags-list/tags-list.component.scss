@@ -1,0 +1,20 @@
+span {
+  display: inline-block;
+  color: #000;
+  background: #d9d9d9;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  margin: .5em .75em .5em 0;
+  transition: color .2s,background-color .2s;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-family: Montserrat,'Arial Black',sans-serif;
+
+  &:hover {
+    background: #000000;
+    color: #d9d9d9;
+
+  }
+}

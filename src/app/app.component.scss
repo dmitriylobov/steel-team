@@ -3,3 +3,7 @@ app-header {
   width: 100%;
   top: 0;
 }
+
+.inner-wrapper {
+  min-height: calc(100vh - 253.5px);
+}
