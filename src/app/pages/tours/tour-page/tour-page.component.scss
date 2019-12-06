@@ -70,3 +70,18 @@ img{
    margin-top: 26px;
    width: 335px;
  }
+
+ // for example
+.image-wrapper {
+  position: relative;
+}
+
+.button-right {
+  width: 20px;
+  height: 20px;
+  background: white;
+  top: 50%;
+  margin-top:-10px;
+  right: 25px;
+  position: absolute;
+}
