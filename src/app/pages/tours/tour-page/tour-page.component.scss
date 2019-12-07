@@ -76,21 +76,28 @@ img{
   position: relative;
 }
 
-.button-right img {
+.button{
   width: 46px;
   height: 46px;
   background: white;
   top: 180px;
-  right: 17px;
   position: absolute;
   border-radius: 50%;
 }
-.button-left img{
-  width: 46px;
-  height: 46px;
-  background: white;
-  top: 180px;
-  left: 17px;
+
+.button-right{
+  right:50px;
   position: absolute;
-  border-radius: 50%;
 }
+
+.button-left{
+  left:50px;
+  position: absolute;
+}
+
+.button img{
+  width: 20px;
+  height: 20px;
+  position: static;
+}
+
