@@ -1,0 +1,29 @@
+.sign-form {
+  display: flex;
+  flex-direction: row;
+
+  input {
+    background-color: #fff;
+    border: none;
+    line-height: 1.5;
+    font-size: 1.5em;
+
+    &[type='submit'] {
+      margin: 2px 2px 2px -34px;
+      background: #222;
+      color: #fff;
+    }
+
+    &[type='email'] {
+      padding: 2px;
+      width: 100%;
+
+      &::placeholder {
+        font-family: Montserrat,'Arial Black',sans-serif;
+        font-size: 1em;
+        color: rgb(0, 38, 62);
+      }
+    }
+  }
+
+}
