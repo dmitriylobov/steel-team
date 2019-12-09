@@ -1,0 +1,38 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2em 0;
+
+  ul {
+    li {
+      line-height: 1.5;
+      font-size: 1em;
+      letter-spacing: .1em;
+      &:first-child {
+        font-size: 1.25em;
+        font-weight: 600;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+.email-link {
+  line-height: 1.5;
+  font-size: 1em;
+  text-decoration: none;
+  border: 2px solid rgb(0, 38, 62);
+  color: rgb(0, 38, 62);
+  margin: .5em 0;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: .5em;
+
+  &:hover {
+    background-color: rgb(0, 38, 62);
+    color: #fff;
+  }
+}
