@@ -14,6 +14,7 @@ import {TAGS} from '../tags';
 export class PostPageComponent {
   id$ = this.router.paramMap.pipe(map(params => params.get('id')));
   post$: Observable<Blog> = this.id$.pipe(map(this.blogService.getPostById.bind(this.blogService)));
+  relatedPosts$: Observable<Blog[]> = this.post$.pipe(map(post => this.blogService.getRelatedPostsById(post.relatedID)));
   // TODO: move to some helper class etc.
   tags = Object.entries(TAGS).map(([, key]: string[]) => key);
 

@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.related-image {
+  width: 25%;
+  margin: 2.5%;
+  img {
+    width: 100%;
+  }
+}
+
+.related-text {
+  margin: 2.5%;
+
+  h4, .date {
+    font-family:  Montserrat,'Arial Black',sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: .1em;
+  }
+
+  .date {
+    font-size: .75em;
+    font-weight: 400;
+    color: #222;
+    padding: 1em .5em;
+  }
+}

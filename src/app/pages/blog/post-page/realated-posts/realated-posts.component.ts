@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Blog} from '../../blog';
 
 @Component({
   selector: 'app-realated-posts',
   templateUrl: './realated-posts.component.html',
   styleUrls: ['./realated-posts.component.scss']
 })
-export class RealatedPostsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class RealatedPostsComponent {
+  @Input() posts: Blog[];
 }

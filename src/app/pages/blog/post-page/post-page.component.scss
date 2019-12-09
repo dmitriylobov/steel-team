@@ -45,6 +45,15 @@ h2 {
   letter-spacing: .05rem;
 }
 
+h4 {
+    font-family: "Montserrat","Roboto",prompt,sans-serif;
+    letter-spacing: 0.1em;
+    padding: 1em 0;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.75em;
+}
+
 .post-content ::ng-deep{
   p, h4 {
     font-family: "Montserrat","Roboto",prompt,sans-serif;

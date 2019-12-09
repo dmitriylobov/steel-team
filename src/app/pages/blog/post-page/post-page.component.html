@@ -1,7 +1,7 @@
 <div class="blog-wrapper" *ngIf="(post$ | async) as post">
   <div class="main-content">
     <div class="image-container">
-      <img [src]="post.imageSrc"/>
+      <img [src]="post.imageSrc" alt="post main image"/>
     </div>
     <app-tags-list [tags]="post.tag"></app-tags-list>
     <h2>{{post.heading}}</h2>
@@ -10,7 +10,7 @@
   </div>
   <div class="sub-info">
     <h4>Относяться к теме:</h4>
-    <app-realated-posts></app-realated-posts>
+    <app-realated-posts [posts]="relatedPosts$ | async"></app-realated-posts>
     <h4>Тэги:</h4>
     <app-tags-list [tags]="tags"></app-tags-list>
   </div>
