@@ -1,0 +1,70 @@
+.blog-wrapper {
+  width: 80%;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-content {
+  width: 65%;
+
+  app-tags-list {
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.image-container {
+  width: 100%;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.sub-info {
+  width: 30%;
+}
+
+h2 {
+  font-family: "Montserrat","Roboto",prompt,sans-serif;
+  letter-spacing: .05rem;
+  font-size: 2em;
+  font-weight: 600;
+  margin: 1em 0 .5em;
+}
+
+.date {
+  font-family: "Montserrat","Roboto",prompt,sans-serif;
+  font-size: 1em;
+  color: #222;
+  padding-bottom: .5em;
+  font-weight: 600;
+  letter-spacing: .05rem;
+}
+
+h4 {
+    font-family: "Montserrat","Roboto",prompt,sans-serif;
+    letter-spacing: 0.1em;
+    padding: 1em 0;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.75em;
+}
+
+.post-content ::ng-deep{
+  p, h4 {
+    font-family: "Montserrat","Roboto",prompt,sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    padding: 1em 0;
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1.75em;
+  }
+}
