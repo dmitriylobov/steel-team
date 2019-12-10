@@ -1,6 +1,6 @@
 import {LandingConfig} from './landing-config';
 
-export const HOME_CONFIG: Partial < LandingConfig > [] = [
+export const HOME_CONFIG: LandingConfig[] = [
   {
     backgroundImage: 'assets/main.png',
     heading: 'Toha lord of the winterfall',
