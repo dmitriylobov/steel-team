@@ -6,10 +6,11 @@
     "start": "ng serve",
     "ivy": "ng serve --aot",
     "build": "ng build",
+    "prod-build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href=\"https://dmitriylobov.github.io/steel-team/\" && angular-cli-ghpages --dir=dist/steel-team"
+    "deploy": "ng build --prod --base-href=\"https://dmitriylobov.github.io/steel-team/\" && angular-cli-ghpages"
   },
   "private": true,
   "dependencies": {
