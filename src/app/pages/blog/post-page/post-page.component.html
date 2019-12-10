@@ -6,7 +6,7 @@
     <app-tags-list [tags]="post.tag"></app-tags-list>
     <h2>{{post.heading}}</h2>
     <p class="date">{{post.date | date:'short'}}</p>
-    <div class="post-content" [innerText]="post.HTML | safe:'html'"></div>
+    <div class="post-content" [innerHTML]="post.HTML | safe:'html'"></div>
   </div>
   <div class="sub-info">
     <h4>Относяться к теме:</h4>
