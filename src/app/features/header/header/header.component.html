@@ -1,17 +1,18 @@
 <nav>
   <div class="navigation">
-    <div class="logo">
-    </div>
+    <a class="logo" routerLink="/home">
+    </a>
     <div class="links">
-      <a routerLink="/tours" routerLinkActive="active">Наши туры</a>
-      <a routerLink="/team" routerLinkActive="active">Наша команда</a>
-      <a routerLink="/reviews" routerLinkActive="active">Отзывы</a>
-      <a routerLink="/blog" routerLinkActive="active">Блог</a>
-      <a routerLink="/contacts" routerLinkActive="active">Контакты</a>
+      <a class="red-link" routerLink="/home" routerLinkActive="active">Главная</a>
+      <a class="red-link" routerLink="/tours" routerLinkActive="active">Наши туры</a>
+      <a class="red-link" routerLink="/team" routerLinkActive="active">Наша команда</a>
+      <a class="red-link" routerLink="/reviews" routerLinkActive="active">Отзывы</a>
+      <a class="red-link" routerLink="/blog" routerLinkActive="active">Блог</a>
+      <a class="red-link" routerLink="/contacts" routerLinkActive="active">Контакты</a>
     </div>
   </div>
   <div class="controls">
     <!--<app-language-selector></app-language-selector>-->
-    <a routerLink="/tours" class="active">Найти тур</a>
+    <a class="red-link active" routerLink="/tours">Найти тур</a>
   </div>
 </nav>
