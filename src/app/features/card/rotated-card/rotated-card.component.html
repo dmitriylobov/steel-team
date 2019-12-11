@@ -1,10 +1,10 @@
 <div class="card-container">
-  <div class="card">
+  <div class="card" [ngStyle]="{'width':width,'height':height}">
     <div class="front">
-      <img src="https://api.adorable.io/avatars/150/1">
+      <ng-container *ngTemplateOutlet="top"></ng-container>
     </div>
     <div class="back">
-      <img src="https://api.adorable.io/avatars/150/2">
+      <ng-container *ngTemplateOutlet="bottom"></ng-container>
     </div>
   </div>
 </div>

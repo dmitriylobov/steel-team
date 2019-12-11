@@ -1,0 +1,12 @@
+.team-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2em 0;
+
+  .team-card {
+    margin: 20px;
+    cursor: pointer;
+  }
+}

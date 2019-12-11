@@ -1,1 +1,27 @@
-<p>team-card works!</p>
+<app-rotated-card [top]="top" [bottom]="bottom" width="370px" height="530px"></app-rotated-card>
+
+<ng-template #top>
+  <div class="top-card">
+    <div class="image">
+      <img [src]="team.avatar" alt="team member"/>
+    </div>
+    <div class="description">
+      <h5 class="white">{{team.name}}</h5>
+      <p class="white">{{team.thumbnail}}</p>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #bottom>
+  <div class="bottom-card">
+    <div class="part-image">
+      <img [src]="team.image" alt="team member"/>
+      <div class="description">
+        <p class="white">{{team.thumbnail}}</p>
+      </div>
+    </div>
+    <div class="full-description">
+        <p>{{team.description}}</p>
+    </div>
+  </div>
+</ng-template>
