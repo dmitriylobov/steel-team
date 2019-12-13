@@ -1,4 +1,4 @@
-img{
+.main-picture img{
   height: 400px;
   width: 750px;
   border-radius: 1%;
@@ -35,8 +35,8 @@ img{
 }
 
 .place{
-  margin-top: 30px;
-  margin-bottom: 79px;
+  margin-top: 22px;
+  margin-bottom: 85px;
 }
 
 .strong-text{
@@ -50,26 +50,30 @@ img{
 }
 
 .parameter{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  margin-right: 62px;
+  margin-right: 48px;
   margin-bottom: 4px;
 }
 
-.add-info{
+.add-info-1, .add-info-2{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 
+.add-info-1{
+  margin-bottom: 23px;
+}
+
+.add-info-2{
+  margin-bottom: 22px;
+}
+
 .data-info{
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
- .hr-1{
-   margin-top: 26px;
-   width: 335px;
- }
 
  // for example
 .image-wrapper {
@@ -95,9 +99,6 @@ img{
   position: absolute;
 }
 
-.button img{
-  width: 20px;
-  height: 20px;
-  position: static;
+.margin-left-for-tour-id{
+  margin-left: 25px;
 }
-
