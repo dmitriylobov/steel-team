@@ -1,24 +1,4 @@
 <h2>Featured tours</h2>
-<div class="container-1">
-  <div class="tour-1">
-    <img src="assets/fit-main.png">
-    <p class="tourName">Romantic European - 2019 (18...</p>
-    <p class="info">18 days from <span  class="line-through">$4,915</span><span class="price"> $4,094</span></p>
-  </div>
-  <div class="tour-2">
-    <img src="assets/fit-main.png">
-    <p class="tourName">10 Days-9 Nights Grand Turkey...</p>
-    <p class="info">21 days from <span class="price"> $5000</span></p>
-    <!--TODO: add starr rating-->
-  </div>
-  <div class="tour-3">
-    <img src="assets/fit-main.png">
-    <p class="tourName">21-Day Inca Trail, Galapagos a...</p>
-    <p class="info">17 days from <span class="price"> $2,000</span></p>
-  </div>
-  <div class="tour-4">
-    <img src="assets/fit-main.png">
-    <p class="tourName">Eastern russia & the trans-sibe...</p>
-    <p class="info">17 days from <span class="price"> $2,000</span></p>
-  </div>
+<div class="container">
+  <app-tour-item *ngFor="let item of list" [item]="item"></app-tour-item>
 </div>

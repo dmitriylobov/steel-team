@@ -1,47 +1,28 @@
-.container-1{
+.container {
   display: flex;
   flex-direction: row;
-  margin-left: 100px;
-  margin-top: 20px;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.container-1 div{
-  margin-right: 24px;
-}
-
-img{
-  width: 312px;
-  height: 170px;
-  margin-bottom: 21px;
-}
-
-.tourName{
-  font-family: Helvetica,Arial,FreeSans,sans-serif;
-  font-weight: bold;
-  font-size: 19.5px;
-  margin-bottom: 9px;
-}
-
-.info{
+.info {
   font-size: 14px;
 }
 
-h2{
+h2 {
   margin-top: 90px;
   margin-bottom: 33px;
   font-size: 31px;
   margin-left: 100px;
   color: #2c3e50;
-  font-family: Helvetica,Arial,FreeSans,sans-serif;
+  font-family: Helvetica, Arial, FreeSans, sans-serif;
   font-weight: bold;
 }
 
-.line-through{
-  text-decoration: line-through red;
-  margin-right: 4px;
-}
-
-.price{
-  font-weight: bold;
+app-tour-item {
+  display: block;
+  margin: 1%;
+  width: 30%;
+  cursor: pointer;
 }
