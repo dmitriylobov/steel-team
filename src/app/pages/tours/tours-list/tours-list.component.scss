@@ -2,22 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
   margin: 0 auto;
-}
-
-.info {
-  font-size: 14px;
-}
-
-h2 {
-  margin-top: 90px;
-  margin-bottom: 33px;
-  font-size: 31px;
-  margin-left: 100px;
-  color: #2c3e50;
-  font-family: Helvetica, Arial, FreeSans, sans-serif;
-  font-weight: bold;
 }
 
 app-tour-item {
@@ -25,4 +10,7 @@ app-tour-item {
   margin: 1%;
   width: 30%;
   cursor: pointer;
+  &:focus  {
+    outline: none;
+  }
 }

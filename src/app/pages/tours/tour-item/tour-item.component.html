@@ -2,7 +2,7 @@
   <div class="image-wrapper">
     <img [src]="item.gallery[0]" [alt]="item.name">
   </div>
-  <p class="tourName">{{item.name}} - {{item.start| date:'short'}}-{{item.end| date:'short'}}</p>
+  <p class="tourName">{{item.name}}: {{item.start| date:'d.M'}} - {{item.end| date:'d.M'}}</p>
   <p class="info">18 days from <span class="line-through">{{item.fullPrice}}</span><span
     class="price"> {{item.fullPrice - item.discount}}</span></p>
 </div>

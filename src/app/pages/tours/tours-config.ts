@@ -8,6 +8,7 @@ export const TOURS: Partial<Tour>[] = [
     end: new Date(),
     fullPrice: 4200,
     discount: 420,
+    id: 0,
   },
   {
     gallery: ['assets/fit-main.png'],
@@ -16,6 +17,7 @@ export const TOURS: Partial<Tour>[] = [
     end: new Date(),
     fullPrice: 4200,
     discount: 420,
+    id: 1,
   },
   {
     gallery: ['assets/fit-main.png'],
@@ -24,6 +26,7 @@ export const TOURS: Partial<Tour>[] = [
     end: new Date(),
     fullPrice: 4200,
     discount: 420,
+    id: 2,
   },
   {
     gallery: ['assets/fit-main.png'],
@@ -32,6 +35,7 @@ export const TOURS: Partial<Tour>[] = [
     end: new Date(),
     fullPrice: 4200,
     discount: 420,
+    id: 3,
   },
   {
     gallery: ['assets/fit-main.png'],
@@ -40,5 +44,6 @@ export const TOURS: Partial<Tour>[] = [
     end: new Date(),
     fullPrice: 4200,
     discount: 420,
+    id: 4,
   },
 ];

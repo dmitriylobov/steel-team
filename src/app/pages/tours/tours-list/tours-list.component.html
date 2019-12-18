@@ -1,4 +1,3 @@
-<h2>Featured tours</h2>
 <div class="container">
-  <app-tour-item *ngFor="let item of list" [item]="item"></app-tour-item>
+  <app-tour-item [routerLink]="item.id" *ngFor="let item of list" [item]="item"></app-tour-item>
 </div>

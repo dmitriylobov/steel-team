@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {TOURS} from '../tours-config';
 import {Tour} from '../tour';
 
 @Component({
@@ -8,5 +7,5 @@ import {Tour} from '../tour';
   styleUrls: ['./tours-list.component.scss']
 })
 export class ToursListComponent {
-  @Input() list: Partial<Tour>[] = TOURS;
+  @Input() list: Partial<Tour>[];
 }

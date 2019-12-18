@@ -1,4 +1,5 @@
 export interface Tour {
+  id: number;
   gallery: string[];
   lables: string[];
   name: string;
