@@ -46,4 +46,13 @@ export const TOURS: Partial<Tour>[] = [
     discount: 420,
     id: 4,
   },
+  {
+    gallery: ['assets/fit-main.png', 'assets/girlsfitt.jpg', 'assets/retro.jpg', 'assets/main.png', 'assets/sea-main.png'],
+    name: 'Our first tour',
+    start: new Date(),
+    end: new Date(),
+    fullPrice: 4200,
+    discount: 420,
+    id: 4,
+  },
 ];
