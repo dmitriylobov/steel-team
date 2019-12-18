@@ -11,7 +11,7 @@ export const TOURS: Partial<Tour>[] = [
     id: 0,
   },
   {
-    gallery: ['assets/fit-main.png'],
+    gallery: ['assets/fit-main.png', 'assets/girlsfitt.jpg', 'assets/retro.jpg', 'assets/main.png', 'assets/sea-main.png'],
     name: 'Our first tour',
     start: new Date(),
     end: new Date(),
@@ -20,7 +20,7 @@ export const TOURS: Partial<Tour>[] = [
     id: 1,
   },
   {
-    gallery: ['assets/fit-main.png'],
+    gallery: ['assets/fit-main.png', 'assets/girlsfitt.jpg', 'assets/retro.jpg', 'assets/main.png', 'assets/sea-main.png'],
     name: 'Our first tour',
     start: new Date(),
     end: new Date(),
@@ -29,7 +29,7 @@ export const TOURS: Partial<Tour>[] = [
     id: 2,
   },
   {
-    gallery: ['assets/fit-main.png'],
+    gallery: ['assets/fit-main.png', 'assets/girlsfitt.jpg', 'assets/retro.jpg', 'assets/main.png', 'assets/sea-main.png'],
     name: 'Our first tour',
     start: new Date(),
     end: new Date(),
@@ -38,7 +38,7 @@ export const TOURS: Partial<Tour>[] = [
     id: 3,
   },
   {
-    gallery: ['assets/fit-main.png'],
+    gallery: ['assets/fit-main.png', 'assets/girlsfitt.jpg', 'assets/retro.jpg', 'assets/main.png', 'assets/sea-main.png'],
     name: 'Our first tour',
     start: new Date(),
     end: new Date(),
