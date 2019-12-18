@@ -1,121 +1,126 @@
-.main-picture img{
-  height: 400px;
-  width: 750px;
-  border-radius: 1%;
-  margin-right: 32px;
-  margin-left: 32px;
-}
-.higher-block{
-  margin-left: 158px;
-  display:flex;
-  flex-direction: row;
-  color: #2c3e50;
-  font-family: Helvetica,Arial,FreeSans,sans-serif;
+.tour-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.number-of-days{
-  margin-top: 2.5px;
-  font-size: 15px;
-  margin-bottom:11px;
-}
-
-.set-of-tours{
-  font-family: Helvetica,Arial,FreeSans,sans-serif;
-  margin-top: 92px;
-  margin-left: 190px;
-  font-size: 77%;
-  margin-bottom: 10px;
-  color: darkgray;
-}
-
-.bold-text{
-  font-weight: bold;
-  font-size: 31px;
-  margin-bottom: 10px;
-}
-
-.place{
-  margin-top: 22px;
-  margin-bottom: 85px;
-}
-
-.strong-text{
-  font-weight: bold;
-}
-
-.small.block{
+.higher-block {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: Helvetica, Arial, FreeSans, sans-serif;
 }
 
-.parameter{
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 48px;
-  margin-bottom: 4px;
+.main-wrapper {
+  width: calc(100% - 380px);
 }
 
-.add-info-1, .add-info-2{
+.text-column {
+  width: 350px;
+}
+
+.tour-info {
+  padding: 1em 0;
+
+  span {
+    font-family: Helvetica, Arial, FreeSans, sans-serif;
+    color: #818d99;
+    font-weight: 400;
+    font-size: .75em;
+    letter-spacing: .01em;
+    line-height: 1.5;
+    cursor: pointer;
+
+    &::after {
+      content: ' 〉 ';
+    }
+
+    &:last-child {
+      &::after {
+        content: '';
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+h4 {
+  color: rgb(129, 141, 153);
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 600;
+  color: rgb(44, 62, 80);
+  font-size: 1.75em;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.tags-list {
+  span {
+    color: #286283;
+    text-decoration: none;
+    background-color: #ebeef2;
+    border-radius: 18px;
+    padding: 9px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #b3d6e9;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.tour-details {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .detail {
+    padding: 1em 0;
+
+    p {
+      font-size: 1em;
+      line-height: 1.5;
+      letter-spacing: .01em;
+    }
+
+    p:first-child {
+      font-weight: 700;
+    }
+
+    width: 150px;
+  }
 }
 
-.add-info-1{
-  margin-bottom: 23px;
-}
+.price-from {
+  font-size: 1em;
+  line-height: 1.5;
 
-.add-info-2{
-  margin-bottom: 22px;
-}
-
-.data-info{
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
- // for example
-.image-wrapper {
-  position: relative;
-}
-
-.button{
-  width: 46px;
-  height: 46px;
-  background: white;
-  top: 180px;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.button-right{
-  right:50px;
-  position: absolute;
-}
-
-.button-left{
-  left:50px;
-  position: absolute;
-}
-
-.margin-left-for-tour-id{
-  margin-left: 25px;
-}
-.small-text{
-  font-size: 14.5px;
-}
-
-.big-text{
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.us{
-  font-size: 25px;
-  margin-right: 5px;
-}
-
-.price{
-  margin-top: 6px;
+  strong {
+    font-weight: 600;
+    font-size: 1.5em;
+  }
 }

@@ -5,6 +5,7 @@ import {TourItemComponent} from './tour-item/tour-item.component';
 import {TourPageComponent} from './tour-page/tour-page.component';
 import {RouterModule} from '@angular/router';
 import {ToursMainComponent} from './tours-main/tours-main.component';
+import {GalleryModule} from 'src/app/features/gallery/gallery.module';
 
 //  take a look into
 //  tourradar.com - list of tours(first part of a page)
@@ -20,6 +21,7 @@ import {ToursMainComponent} from './tours-main/tours-main.component';
       {path: '', component: ToursMainComponent},
       {path: ':id', component: TourPageComponent},
     ]),
+    GalleryModule,
   ]
 })
 export class ToursModule {

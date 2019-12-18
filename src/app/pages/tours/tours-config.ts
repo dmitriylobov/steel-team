@@ -2,7 +2,7 @@ import {Tour} from './tour';
 
 export const TOURS: Partial<Tour>[] = [
   {
-    gallery: ['assets/fit-main.png'],
+    gallery: ['assets/fit-main.png', 'assets/girlsfitt.jpg', 'assets/retro.jpg', 'assets/main.png', 'assets/sea-main.png'],
     name: 'Our first tour',
     start: new Date(),
     end: new Date(),
