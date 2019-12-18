@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{LJbU:function(n,o,c){"use strict";c.r(o);var b=c("8Y7J"),e=function(){},r=c("SVse");c.d(o,"ReviewsModuleNgFactory",(function(){return t}));var t=b.ob(e,[],(function(n){return b.Ab([b.Bb(512,b.j,b.Z,[[8,[]],[3,b.j],b.v]),b.Bb(4608,r.n,r.m,[b.s,[2,r.A]]),b.Bb(1073742336,r.c,r.c,[]),b.Bb(1073742336,e,e,[])])}))}}]);
