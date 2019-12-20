@@ -6,6 +6,7 @@ import {TourPageComponent} from './tour-page/tour-page.component';
 import {RouterModule} from '@angular/router';
 import {ToursMainComponent} from './tours-main/tours-main.component';
 import {GalleryModule} from 'src/app/features/gallery/gallery.module';
+import {AgmCoreModule} from '@agm/core';
 
 //  take a look into
 //  tourradar.com - list of tours(first part of a page)
@@ -22,6 +23,9 @@ import {GalleryModule} from 'src/app/features/gallery/gallery.module';
       {path: ':id', component: TourPageComponent},
     ]),
     GalleryModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCcGAOo7lbNi93Vi6sd9EAyOo8o03so698'
+    }),
   ]
 })
 export class ToursModule {

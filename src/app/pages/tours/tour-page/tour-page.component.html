@@ -9,15 +9,38 @@
   <div class="higher-block" *ngIf="(active$|async) as tour">
     <div class="main-wrapper">
       <app-gallery [images]="tour.gallery"></app-gallery>
-    </div>
-    <div class="text-column">
-      <h4>3 days</h4>
-      <h3>3 Days Private Golden Triangle Tour with 3 Star Hotel</h3>
-      <p>From <strong>Delhi</strong> to <strong>Kair</strong></p>
       <div class="tags-list">
         <span>Custom</span>
         <span>Christmas & New Year</span>
       </div>
+      <h2>Места которые мы посетим</h2>
+      <div class="see-places">
+        <div class="place-card">
+          <div class="place-image"><img src="assets/girlsfitt.jpg" alt="place"/></div>
+          <h6>Agra</h6>
+        </div>
+        <div class="place-card">
+          <div class="place-image"><img src="assets/girlsfitt.jpg" alt="place"/></div>
+          <h6>Guineya</h6>
+        </div>
+        <div class="place-card">
+          <div class="place-image"><img src="assets/girlsfitt.jpg" alt="place"/></div>
+          <h6>Akreminos</h6>
+        </div>
+      </div>
+      <div class="map-wrapper">
+        <agm-map [latitude]="lat" [longitude]="lon" [zoom]="zoom">
+          <agm-marker [latitude]="lat" [longitude]="lon"></agm-marker>
+          <agm-marker [latitude]="lat1" [longitude]="lon1"></agm-marker>
+        </agm-map>
+      </div>
+      <div class="schedule-wrapper"></div>
+      <div class="whats-included-wrapper"></div>
+    </div>
+    <div class="text-column">
+      <h4>3 days</h4>
+      <h3>3 Days Private Golden Triangle Tour with 3 Star Hotel</h3>
+      <p class="destinition">From <strong>Delhi</strong> to <strong>Kair</strong></p>
       <div class="tour-details">
         <div class="detail">
           <p>Tour operator</p>

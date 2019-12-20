@@ -14,9 +14,16 @@ import {map} from 'rxjs/operators';
 export class TourPageComponent {
   active$: Observable<Tour>;
 
+  lat = 45.730150;
+  lon = 34.225271;
+  lat1 = 46.230150;
+  lon1 = 35.225271;
+  zoom = 7;
+
   constructor(private toursService: ToursService,
               private route: ActivatedRoute) {
     this.active$ = this.route.paramMap.pipe(map(p => +p.get('id')),
       map(this.toursService.getTourById.bind(this.toursService)));
   }
+
 }
