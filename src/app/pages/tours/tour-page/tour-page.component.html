@@ -275,6 +275,18 @@
       </div>
       <div class="stay-wrapper">
         <h2>Где вы остановитесь?</h2>
+        <div class="stay-place">
+          <div class="hotel-icon">
+            <mat-icon>hotel</mat-icon>
+          </div>
+          <h5>Отель El-Haze 5 звёзд</h5>
+        </div>
+      </div>
+      <div class="reviews-wrapper">
+        <h2>Кто будет с вами</h2>
+        <div class="team-wrapper">
+          <app-team-card *ngFor="let member of team" [team]="member"></app-team-card>
+        </div>
       </div>
     </div>
     <div class="text-column">

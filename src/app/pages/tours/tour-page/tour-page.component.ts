@@ -4,6 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 import {Tour} from '../tour';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
+import {TEAM} from '../../team/team-config';
 
 @Component({
   selector: 'app-tour-page',
@@ -19,6 +20,7 @@ export class TourPageComponent {
   lat1 = 46.230150;
   lon1 = 35.225271;
   zoom = 7;
+  team = TEAM.slice(0, 3);
 
   constructor(private toursService: ToursService,
               private route: ActivatedRoute) {

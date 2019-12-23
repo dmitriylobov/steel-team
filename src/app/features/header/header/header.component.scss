@@ -6,15 +6,16 @@ nav {
   padding: 15px;
   justify-content: space-between;
 
-  a.red-link{
+  a.red-link {
     padding: 5px 10px;
     font-size: 14px;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Montserrat,'Arial Black',sans-serif;
+    font-family: Montserrat, 'Arial Black', sans-serif;
     border-radius: 4px;
     font-weight: 700;
+
     &:hover {
       @extend .active;
     }
@@ -38,9 +39,10 @@ nav {
 }
 
 .active {
-    background-color: rgb(204, 9, 47);
+  background-color: rgb(204, 9, 47);
 }
 
 .controls {
   display: flex;
 }
+

@@ -277,3 +277,39 @@ h2 {
     }
   }
 }
+
+.stay-place {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(199, 208, 217);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+
+  h5 {
+    font-size: 1.25em;
+    letter-spacing: -.01em;
+    font-weight: 600;
+    color: rgb(44, 62, 80);
+  }
+}
+
+.hotel-icon {
+  background-color: rgba(102, 176, 218, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 1em;
+
+  mat-icon {
+    color: rgb(102, 176, 218);
+  }
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+app-team-card {
+  margin-right: 2em;
+}

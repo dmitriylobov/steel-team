@@ -1,4 +1,4 @@
-<app-rotated-card [top]="top" [bottom]="bottom" width="370px" height="530px"></app-rotated-card>
+<app-rotated-card [top]="top" [bottom]="bottom"></app-rotated-card>
 
 <ng-template #top>
   <div class="top-card">
@@ -16,12 +16,9 @@
   <div class="bottom-card">
     <div class="part-image">
       <img [src]="team.image" alt="team member"/>
-      <div class="description">
-        <p class="white">{{team.thumbnail}}</p>
-      </div>
     </div>
     <div class="full-description">
-        <p>{{team.description}}</p>
+      <p>{{team.description}}</p>
     </div>
   </div>
 </ng-template>

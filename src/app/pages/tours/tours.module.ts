@@ -9,6 +9,7 @@ import {GalleryModule} from 'src/app/features/gallery/gallery.module';
 import {AgmCoreModule} from '@agm/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
+import {TeamCardModule} from '../team/team-card/team-card.module';
 
 //  take a look into
 //  tourradar.com - list of tours(first part of a page)
@@ -25,6 +26,7 @@ import {MatIconModule} from '@angular/material/icon';
       {path: ':id', component: TourPageComponent},
     ]),
     GalleryModule,
+    TeamCardModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCcGAOo7lbNi93Vi6sd9EAyOo8o03so698'
     }),

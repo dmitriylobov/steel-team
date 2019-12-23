@@ -8,6 +8,4 @@ import {Component, Input, TemplateRef} from '@angular/core';
 export class RotatedCardComponent {
   @Input() top: TemplateRef<any>;
   @Input() bottom: TemplateRef<any>;
-  @Input() width: string;
-  @Input() height: string;
 }
