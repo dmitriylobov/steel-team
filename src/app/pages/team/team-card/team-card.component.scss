@@ -1,6 +1,7 @@
 .bottom-card {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 
   .part-image {
     position: relative;
@@ -33,6 +34,7 @@
 }
 
 .top-card {
+  cursor: pointer;
   position: relative;
   overflow: hidden;
 
