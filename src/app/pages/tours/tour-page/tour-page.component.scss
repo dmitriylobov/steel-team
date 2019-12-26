@@ -313,3 +313,116 @@ h2 {
 app-team-card {
   margin-right: 2em;
 }
+
+.tour-operator {
+  display: flex;
+  padding: 5px;
+  background-color: rgba(48, 117, 157, .1);
+  justify-content: space-between;
+  border-radius: 13px;
+}
+
+.tour-logo {
+  padding: 10px;
+
+  mat-icon {
+    color: #66b0da;
+  }
+}
+
+.tour-text {
+  h5 {
+    font-size: 1em;
+    line-height: 1.25;
+    letter-spacing: .01em;
+    color: #2c3e50;
+    font-weight: 700;
+  }
+}
+
+.tour-left {
+  display: flex;
+  align-items: center;
+}
+
+.tour-mark {
+  display: flex;
+  align-items: center;
+
+  .digit {
+    line-height: 1.25;
+    letter-spacing: .01em;
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  mat-icon {
+    color: darkgoldenrod;
+    font-size: 1.25em;
+  }
+}
+
+.review {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #c7d0d9;;
+  margin-bottom: 1.5em;
+
+  &-stars {
+    mat-icon {
+      color: darkgoldenrod;
+      font-size: 1.25em;
+    }
+  }
+
+  &-author {
+    display: flex;
+    align-items: center;
+
+    h5 {
+      font-size: 1em;
+      line-height: 1.5;
+      font-weight: 600;
+      letter-spacing: .2px;
+      padding-right: 5px;
+    }
+
+    p {
+      font-size: .75em;
+      line-height: 1.5;
+    }
+  }
+}
+
+.reviews-list {
+  margin: 2em 0;
+}
+
+.faq-content {
+  margin: 2em 0;
+}
+
+.tour-action {
+  align-items: flex-start;
+  border: 1px solid rgb(64, 156, 209);
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: rgb(64, 156, 209);
+  display: block;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, FreeSans, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: rgb(64, 156, 209) none 0;
+  padding: .75em .5em;
+  text-align: center;
+  text-decoration-color: rgb(64, 156, 209);
+  text-decoration-style: solid;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(64, 156, 209);
+    color: rgb(255, 255, 255);
+  }
+
+}

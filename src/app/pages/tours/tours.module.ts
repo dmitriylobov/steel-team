@@ -31,7 +31,7 @@ import {TeamCardModule} from '../team/team-card/team-card.module';
       apiKey: 'AIzaSyCcGAOo7lbNi93Vi6sd9EAyOo8o03so698'
     }),
     MatExpansionModule,
-    MatIconModule,
+    MatIconModule
   ]
 })
 export class ToursModule {
