@@ -1,0 +1,54 @@
+.review {
+  display: flex;
+  padding: 2em;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.mark {
+  color: #616161;
+  font-size: 1.25em;
+}
+
+.bold {
+  color: black;
+  font-weight: 600;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.from {
+  color: #616161;
+  font-size: .75em;
+}
+
+.date {
+  color: #1e1e1e;
+  font-size: .8em;
+}
+
+.message {
+  margin: 1em 0;
+  font-size: 1.15em;
+
+  &-review {
+    font-size: 1em;
+  }
+}
+
+.author-response {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 500;
+  font-size: .95em;
+  letter-spacing: 0.02em;
+}
+
+.comment-response {
+  margin: 1em;
+}

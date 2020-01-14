@@ -1,1 +1,22 @@
-<p>review works!</p>
+<div class="review">
+  <div class="author">
+    <div class="mark">
+      <span class="bold">{{item.mark}}</span> out of 5
+    </div>
+    <div class="from"> by {{item.author}}</div>
+  </div>
+  <div class="comment">
+    <div class="date">Posted {{item.date | date:'MMMM d, y'}}</div>
+    <div class="message">{{item.comment}}</div>
+    <div class="response" *ngIf="item.response as response">
+      <div class="author-response">
+        <mat-icon>comment</mat-icon>
+        Response from Steel team
+      </div>
+      <div class="comment-response">
+        <div class="date">{{response.date| date:'MMMM d, y'}} by {{response.author}}</div>
+        <div class="message message-review">{{response.comment}}</div>
+      </div>
+    </div>
+  </div>
+</div>
