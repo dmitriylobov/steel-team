@@ -12,11 +12,18 @@
   background: white;
 }
 
-h2 {
+h2, h3 {
   color: #00355f;
   font-size: 1.5em;
   letter-spacing: .01em;
   line-height: 2;
+}
+
+h3 {
+  padding: 1em 0;
+  font-weight: bold;
+  letter-spacing: .025em;
+  font-size: 1.25em;
 }
 
 p {
