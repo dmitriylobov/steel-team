@@ -6,5 +6,24 @@
 .container {
   width: 80%;
   margin: 80px auto 0;
+}
+
+.white-container {
   background: white;
+}
+
+h2 {
+  color: #00355f;
+  font-size: 1.5em;
+  letter-spacing: .01em;
+  line-height: 2;
+}
+
+p {
+  font-weight: bold;
+  color: #536d83;
+  letter-spacing: .025em;
+  font-size: 1em;
+  line-height: 2;
+  padding-bottom: 2em;
 }
