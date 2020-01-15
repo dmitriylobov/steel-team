@@ -1,0 +1,24 @@
+/**********
+* SCREENS *
+**********/
+
+$screen-sm-min: 768px; // min tablet/mobile
+$screen-md-min: 1024px; // max tablet/desktop
+
+@mixin tablet {
+  @media (min-width: $screen-sm-min) and(max-width: $screen-md-min) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $screen-md-min) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $screen-sm-min) {
+    @content;
+  }
+}

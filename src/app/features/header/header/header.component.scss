@@ -1,3 +1,5 @@
+@import '~src/screens';
+
 nav {
   display: flex;
   align-items: center;
@@ -24,6 +26,19 @@ nav {
 
 .links {
   margin: 0 20px;
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  @include desktop {
+    display: none;
+  }
 }
 
 .logo {
@@ -44,5 +59,14 @@ nav {
 
 .controls {
   display: flex;
+  align-items: center;
+}
+
+.mobile-menu {
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  margin-left: 2em;
 }
 

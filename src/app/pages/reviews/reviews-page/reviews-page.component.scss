@@ -34,3 +34,10 @@ p {
   line-height: 2;
   padding-bottom: 2em;
 }
+
+.review-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 2em 0;
+}

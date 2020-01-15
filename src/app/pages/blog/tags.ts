@@ -1,8 +1,9 @@
 export enum TAGS {
   fitness = 'фитнесс',
-  rocks  = 'горы',
-  desert = 'пустыня',
-  noolik = 'нулёвщик',
-  bokser = 'боксёр',
-  tennis = 'теннис',
+  health = 'здороьве',
+  drugs = 'спортпит',
+  vita = 'витамины',
+  motivation = 'мотивация',
+  streching = 'растяжка',
+  massage = 'массаж'
 }

@@ -1,12 +1,11 @@
 <div class="container">
-  <h2>Steel team service reviews</h2>
+  <div class="review-container">
+    <h2>Отзывы о нашей команде</h2>
+    <button mat-raised-button color="primary" (click)="addReview()">Оставить отзыв</button>
+  </div>
   <hr/>
-  <p>Ratings based on 1,774 Verified Reviews</p>
+  <p>Рейтинг основан на 1,257 учасниках туров</p>
   <div class="white-container">
     <app-reviews-list [list]="reviewsList$ | async"></app-reviews-list>
-  </div>
-  <div class="form-wrapper">
-    <h3>Оставить отзыв?</h3>
-    <app-reviews-form></app-reviews-form>
   </div>
 </div>

@@ -5,7 +5,7 @@ import {DUMMY_HTML} from './dummy.html';
 export const BLOG_CONFIG: Blog[] = [
   {
     id: 0,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.health, TAGS.fitness, TAGS.drugs],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -14,7 +14,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 1,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.vita, TAGS.fitness, TAGS.streching],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -23,7 +23,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 2,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.vita, TAGS.fitness, TAGS.massage],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -32,7 +32,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 3,
-    tag: [ TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.fitness, TAGS.motivation],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -41,7 +41,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 4,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.motivation, TAGS.fitness, TAGS.streching],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -50,7 +50,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 5,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.massage, TAGS.fitness, TAGS.health],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -59,7 +59,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 6,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.streching, TAGS.fitness, TAGS.motivation],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -68,7 +68,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 7,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.vita, TAGS.fitness, TAGS.drugs],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -77,7 +77,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 8,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.vita, TAGS.fitness, TAGS.drugs],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -86,7 +86,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 9,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.drugs, TAGS.fitness, TAGS.massage],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,
@@ -95,7 +95,7 @@ export const BLOG_CONFIG: Blog[] = [
   },
   {
     id: 10,
-    tag: [ TAGS.desert, TAGS.fitness, TAGS.rocks],
+    tag: [ TAGS.massage, TAGS.fitness, TAGS.motivation],
     date: new Date(),
     heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     HTML: DUMMY_HTML,

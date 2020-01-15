@@ -14,5 +14,18 @@
   <div class="controls">
     <!--<app-language-selector></app-language-selector>-->
     <a class="red-link active" routerLink="/tours">Найти тур</a>
+    <button class="mobile-menu" mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>dehaze</mat-icon>
+    </button>
   </div>
 </nav>
+
+<mat-menu #appMenu="matMenu" class="mobile-list">
+  <button mat-menu-item><a class="mobile-link" routerLink="/home">Главная</a></button>
+  <button mat-menu-item><a class="mobile-link"  routerLink="/tours">Наши туры</a></button>
+  <button mat-menu-item><a class="mobile-link"  routerLink="/team">Наша команда</a></button>
+  <button mat-menu-item><a class="mobile-link"  routerLink="/reviews">Отзывы</a></button>
+  <button mat-menu-item><a class="mobile-link"  routerLink="/blog">Блог</a></button>
+  <button mat-menu-item><a class="mobile-link"  routerLink="/contacts">Контакты</a></button>
+</mat-menu>
+

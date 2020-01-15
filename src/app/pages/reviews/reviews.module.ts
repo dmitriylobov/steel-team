@@ -4,7 +4,7 @@ import {ReviewComponent} from './review/review.component';
 import {ReviewsListComponent} from './reviews-list/reviews-list.component';
 import {ReviewsPageComponent} from './reviews-page/reviews-page.component';
 import {RouterModule} from '@angular/router';
-import {MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule} from '@angular/material';
+import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatIconModule, MatInputModule} from '@angular/material';
 import {ReviewsFormComponent} from './reviews-form/reviews-form.component';
 import {TextFieldModule} from '@angular/cdk/text-field';
 
@@ -20,8 +20,12 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     MatInputModule,
     TextFieldModule,
     MatIconModule,
-    MatButtonModule
-  ]
+    MatButtonModule,
+    MatDialogModule,
+  ],
+  entryComponents: [
+    ReviewsFormComponent,
+  ],
 })
 export class ReviewsModule {
 }
