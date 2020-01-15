@@ -1,3 +1,5 @@
+@import "~src/screens";
+
 .contact-image {
   width: 100%;
   background: url('~src/assets/contact-us.jpg') no-repeat;
@@ -16,6 +18,13 @@
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    @include mobile {
+      color: #222;
+    }
+    @include tablet {
+      color: #222;
+    }
+
   }
 
   p {

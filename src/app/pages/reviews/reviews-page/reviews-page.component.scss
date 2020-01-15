@@ -1,3 +1,5 @@
+@import "~src/screens";
+
 :host {
   background-color: #eeeeee;
   display: block;
@@ -17,6 +19,12 @@ h2, h3 {
   font-size: 1.5em;
   letter-spacing: .01em;
   line-height: 2;
+  @include mobile {
+    line-height: 1.2;
+  }
+  @include tablet {
+    line-height: 1.2;
+  }
 }
 
 h3 {
@@ -33,6 +41,13 @@ p {
   font-size: 1em;
   line-height: 2;
   padding-bottom: 2em;
+  @include mobile {
+    line-height: 1.2;
+  }
+  @include tablet {
+    line-height: 1.2;
+  }
+
 }
 
 .review-container {
@@ -40,4 +55,12 @@ p {
   justify-content: space-between;
   flex-direction: row;
   padding: 2em 0;
+  @include mobile {
+    align-items: center;
+    flex-direction: column;
+  }
+  @include tablet {
+    align-items: center;
+    flex-direction: column;
+  }
 }

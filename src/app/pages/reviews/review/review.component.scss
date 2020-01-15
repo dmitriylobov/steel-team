@@ -1,8 +1,20 @@
+@import "~src/screens";
+
 .review {
   display: flex;
   padding: 2em;
   background-color: #fff;
   border-bottom: 1px solid #eee;
+
+  @include mobile {
+    padding: 1em;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    padding: 1em;
+    flex-direction: column;
+  }
 }
 
 .mark {
@@ -20,6 +32,13 @@
   flex-direction: column;
   justify-content: space-between;
   width: 20%;
+  @include mobile {
+    width: auto;
+  }
+
+  @include tablet {
+    width: auto;
+  }
 }
 
 .from {

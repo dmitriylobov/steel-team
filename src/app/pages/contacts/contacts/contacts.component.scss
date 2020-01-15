@@ -1,8 +1,16 @@
+@import "~src/screens";
+
 .contacts {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 2em 0;
+  @include mobile {
+    flex-direction: column;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
 
   ul {
     li {
