@@ -1,8 +1,16 @@
+@import '~src/screens';
+
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
+  @include mobile {
+    flex-direction: column;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 app-tour-item {
@@ -10,7 +18,15 @@ app-tour-item {
   margin: 1%;
   width: 30%;
   cursor: pointer;
-  &:focus  {
+  &:focus {
     outline: none;
+  }
+  @include mobile {
+    width: auto;
+    margin: 1em;
+  }
+  @include tablet {
+    width: auto;
+    margin: 1em;
   }
 }

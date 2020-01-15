@@ -1,7 +1,15 @@
+@import '~src/screens';
+
 .tour-wrapper {
   width: 80%;
   margin: 0 auto;
   max-width: 1280px;
+  @include tablet {
+    width: 95%;
+  }
+  @include mobile {
+    width: 95%;
+  }
 }
 
 .higher-block {
@@ -9,14 +17,32 @@
   flex-direction: row;
   justify-content: space-between;
   font-family: Helvetica, Arial, FreeSans, sans-serif;
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 }
 
 .main-wrapper {
   width: calc(100% - 380px);
+  @include tablet {
+    width: auto;
+  }
+  @include mobile {
+    width: auto;
+  }
 }
 
 .text-column {
   width: 350px;
+  @include tablet {
+    width: auto;
+  }
+  @include mobile {
+    width: auto;
+  }
 }
 
 .tour-info {
@@ -135,10 +161,27 @@ p {
 .see-places {
   display: flex;
   flex-direction: row;
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 
   .place-card {
     max-width: 320px;
     margin-right: 2em;
+    display: flex;
+    @include tablet {
+      flex-direction: column-reverse;
+      margin: 0;
+    }
+
+    @include mobile {
+      flex-direction: column-reverse;
+      margin: 0;
+    }
 
     .place-image {
       img {
@@ -163,6 +206,16 @@ h2 {
   letter-spacing: .02em;
   font-weight: 600;
   color: rgb(44, 62, 80);
+  @include mobile {
+    line-height: 1.2;
+    font-size: 1.25em;
+    padding: .75em 0 .5em;
+  }
+  @include tablet {
+    line-height: 1.2;
+    font-size: 1.25em;
+    padding: .75em 0 .5em;
+  }
 }
 
 .map-wrapper {
@@ -308,10 +361,22 @@ h2 {
 .team-wrapper {
   display: flex;
   justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 app-team-card {
   margin-right: 2em;
+  @include mobile {
+    margin: 1em;
+  }
+  @include tablet {
+    margin: 1em;
+  }
 }
 
 .tour-operator {

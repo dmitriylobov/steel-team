@@ -24,6 +24,16 @@ nav {
   }
 }
 
+.mobile-link {
+  font-size: 1.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Montserrat, 'Arial Black', sans-serif;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #333;
+}
+
 .links {
   margin: 0 20px;
   @include tablet {
