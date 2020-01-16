@@ -13,7 +13,8 @@
   font-weight: 600;
   letter-spacing: .01rem;
   padding: 5px 0;
-
+  display: flex;
+  flex-wrap: wrap;
   span {
     padding-right: 3.5px;
   }

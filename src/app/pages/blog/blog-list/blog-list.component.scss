@@ -14,10 +14,10 @@ app-blog-item {
   background-color: white;
   cursor: pointer;
   @include tablet {
-    width: auto;
+    width: 100%;
   }
   @include mobile {
-    width: auto;
+    width: 100%;
   }
 
 }

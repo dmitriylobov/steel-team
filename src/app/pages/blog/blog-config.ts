@@ -10,7 +10,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'Steel team перед походом в зал рекомендует',
     HTML: POST1,
     relatedID: [1, 2, 3],
-    imageSrc: 'assets/crossfit-postureo.jpg'
+    imageSrc: 'assets/blog/ImageBlog1.jpg'
   },
   {
     id: 1,
@@ -19,7 +19,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'Steel team перед походом в зал рекомендует (продолжение)',
     HTML: POST2,
     relatedID: [0, 2, 3],
-    imageSrc: 'assets/girlsfitt.jpg'
+    imageSrc: 'assets/blog/crosfblog7.jpg'
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'Витамины и минералы',
     HTML: POST3,
     relatedID: [0, 1, 3],
-    imageSrc: 'assets/SI640_TK1_01250.jpg'
+    imageSrc: 'assets/blog/vitaminsblog3.jpg'
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'Аминокислоты',
     HTML: POST4,
     relatedID: [1, 2, 4],
-    imageSrc: 'assets/SI640_TK2_00235.jpg'
+    imageSrc: 'assets/blog/aminoblog2.png'
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'Глютамин',
     HTML: POST5,
     relatedID: [3, 5, 6],
-    imageSrc: 'assets/crossfit-postureo.jpg'
+    imageSrc: 'assets/blog/glutaminblog5.jpg'
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'Вода и спорт',
     HTML: POST6,
     relatedID: [1, 2, 0],
-    imageSrc: 'assets/SI640_TK2_00271.jpg'
+    imageSrc: 'assets/blog/vodaisportblog6.jpg'
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: '10 способов повышения продуктивности',
     HTML: POST7,
     relatedID: [0, 1, 7],
-    imageSrc: 'assets/crossfit-postureo.jpg'
+    imageSrc: 'assets/blog/productivnostblog7.jpg'
   },
   {
     id: 7,
@@ -73,7 +73,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: '5 фактов о пользе рыбы для атлета',
     HTML: POST8,
     relatedID: [3, 4, 6],
-    imageSrc: 'assets/SI640_TK2_00271.jpg'
+    imageSrc: 'assets/blog/fishblog8.jpg'
   },
   {
     id: 8,
@@ -82,7 +82,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: '5 советов как не допустить перетренированность',
     HTML: POST9,
     relatedID: [7, 9, 0],
-    imageSrc: 'assets/SI640_TK2_00271.jpg'
+    imageSrc: 'assets/blog/peretrenblog9.jpg'
   },
   {
     id: 9,
@@ -91,7 +91,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'Мотивируйся',
     HTML: POST10,
     relatedID: [1, 6, 5],
-    imageSrc: 'assets/SI640_TK2_00271.jpg'
+    imageSrc: 'assets/blog/Motivblog10.jpg'
   },
   {
     id: 10,
@@ -100,7 +100,7 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'В чем польза растяжки?',
     HTML: POST11,
     relatedID: [11, 9, 8],
-    imageSrc: 'assets/SI640_TK2_00271.jpg'
+    imageSrc: 'assets/blog/rastyazhkablog11.jpg'
   },
   {
     id: 11,
@@ -109,6 +109,6 @@ export const BLOG_CONFIG: Blog[] = [
     heading: 'Особенности выполнения растяжки после тренировки',
     HTML: POST12,
     relatedID: [10, 9, 1],
-    imageSrc: 'assets/SI640_TK2_00271.jpg'
+    imageSrc: 'assets/blog/zaminkablog12.jpg'
   }
 ];
