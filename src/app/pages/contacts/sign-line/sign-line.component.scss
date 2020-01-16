@@ -1,9 +1,18 @@
+@import '~src/screens';
+
 .form-wrapper {
   background-color: #222;
   padding: 2em 10%;
   display: flex;
   justify-content: space-between;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
   app-sign-form {
     display: block;
     min-width: 30%;
