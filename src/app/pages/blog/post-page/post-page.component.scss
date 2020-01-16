@@ -82,16 +82,59 @@ h4 {
 }
 
 .post-content ::ng-deep {
-  p, h4 {
+  p, h4, a, span {
     font-family: "Montserrat", "Roboto", prompt, sans-serif;
     font-size: 1.2em;
     letter-spacing: 0.1em;
-    padding: 1em 0;
+    padding: .5em 0;
     line-height: 1.5;
+    text-decoration: none;
+    color: #222;
+  }
+  a {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 1.1em;
+  }
+
+  .underline {
+    text-decoration: underline;
   }
 
   h4 {
     font-weight: 600;
+    font-size: 1.35em;
+  }
+
+  ul, ol {
+    margin: 1.25em 0;
+    li {
+      font-family: "Montserrat", "Roboto", prompt, sans-serif;
+      font-size: 1.2em;
+      letter-spacing: 0.05em;
+      padding: .5em 0;
+      margin: 0 1em;
+      line-height: 1.5;
+      list-style: square;
+    }
+  }
+
+  ol li {
+    list-style: decimal;
+  }
+
+  h1 {
+    padding: .75em 0;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: .02rem;
     font-size: 1.75em;
   }
 }

@@ -5,5 +5,6 @@ export enum TAGS {
   vita = 'витамины',
   motivation = 'мотивация',
   streching = 'растяжка',
-  massage = 'массаж'
+  massage = 'массаж',
+  sport = 'спорт'
 }
