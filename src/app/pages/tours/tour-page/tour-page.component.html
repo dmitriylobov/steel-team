@@ -284,9 +284,7 @@
       </div>
       <div>
         <h2>Кто будет с вами</h2>
-        <div class="team-wrapper">
-          <app-team-card *ngFor="let member of team" [team]="member"></app-team-card>
-        </div>
+        <app-team-list [list]="team"></app-team-list>
       </div>
       <div class="reviews-wrapper">
         <h2>Отзывы о туре</h2>

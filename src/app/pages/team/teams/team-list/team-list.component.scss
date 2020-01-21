@@ -12,12 +12,12 @@
     cursor: pointer;
 
     @include mobile {
-      height: 400px;
+      height: 350px;
       width: 100%;
     }
 
     @include tablet {
-      height: 400px;
+      height: 350px;
       width: 100%;
     }
   }
