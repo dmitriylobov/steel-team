@@ -8,4 +8,5 @@ import {Component, Input, TemplateRef} from '@angular/core';
 export class RotatedCardComponent {
   @Input() top: TemplateRef<any>;
   @Input() bottom: TemplateRef<any>;
+  @Input() flip = false;
 }

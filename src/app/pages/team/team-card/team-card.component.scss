@@ -1,3 +1,7 @@
+.top-card, .bottom-card {
+  height: 400px;
+}
+
 .bottom-card {
   position: relative;
   overflow: hidden;
@@ -7,12 +11,13 @@
     position: relative;
 
     img {
+      height: 400px;
       width: 100%;
     }
   }
 
   .full-description {
-    background-color: #fff;
+    background-color: rgba(255,255,255,.8);;
     overflow: hidden;
     z-index: 10;
     position: absolute;
@@ -24,7 +29,6 @@
       font-weight: 400;
       line-height: 1.2;
       letter-spacing: 0.1em;
-      height: 160px;
       text-overflow: ellipsis;
       word-break: break-all;
       padding: .5em 1em;
@@ -40,8 +44,8 @@
 
   .image {
     img {
+      height: 400px;
       width: 100%;
-      height: auto;
     }
   }
 }
