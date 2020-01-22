@@ -2,12 +2,12 @@
 
 .contact-image {
   width: 100%;
-  background: url('~src/assets/contact-us.jpg') no-repeat;
+  background: url('~src/assets/contacts-us.jpg') no-repeat 30% 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 500px;
-  background-size: 100%;
+  height: 600px;
+  background-size: cover;
 
   h2, p {
     font-family: Montserrat, 'Arial Black', sans-serif;
@@ -18,13 +18,6 @@
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    @include mobile {
-      color: #222;
-    }
-    @include tablet {
-      color: #222;
-    }
-
   }
 
   p {
