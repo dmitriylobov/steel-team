@@ -36,5 +36,14 @@ const memberTimur = {
   avatar: 'assets/timur-front.jpg'
 };
 
+export const memberOblomova = {
+  name: 'Обломова',
+  position: 'Старший тренер',
+  thumbnail: 'Мастер по фитнесу',
+  description: `Краткий текст про Игоря где рассказывается про его методологии и методики работы на турнике.`,
+  image: 'assets/oblomova-back.jpg',
+  avatar: 'assets/oblomova-front.jpg'
+};
 
-export const TEAM: Member[] = [member, memberStretch, memberKovarik,memberTimur];
+
+export const TEAM: Member[] = [member, memberStretch, memberKovarik, memberOblomova, memberTimur];
