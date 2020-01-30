@@ -15,14 +15,13 @@ export interface Tour {
   mapPlace: { lat: number, lon: number }[];
   places: { name: string, image: string }[];
   itinerary: { icon: string, heading: string, description: string, className: string }[];
-  includedItems: { heading: string, description: string }[];
-  excludedItems: { heading: string, description: string }[];
+  includedItems: { heading: string, description: string, icon: string }[];
   placeToStay: string;
   reviews: {
     date: Date,
     name: string,
-    rating: number,
+    rating: null[],
     text: string
-  };
+  }[];
   goodToKnow: { heading: string, description: string }[];
 }

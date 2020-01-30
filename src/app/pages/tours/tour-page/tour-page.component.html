@@ -21,65 +21,23 @@
         </agm-map>
       </div>
       <div class="schedule-wrapper">
-        <h2>Маршрут нашего тура</h2>
+        <h2>Распорядок нашего тура</h2>
         <mat-expansion-panel *ngFor="let item of tour.itinerary">
           <mat-expansion-panel-header>
             <mat-icon [ngClass]="item.className">{{item.icon}}</mat-icon>
             <h5>{{item.heading}}</h5>
           </mat-expansion-panel-header>
-          {{item.description}}
+          <div [innerHTML]="item.description"></div>
         </mat-expansion-panel>
       </div>
       <div class="schedule-wrapper whats-included-wrapper">
         <h2>Что включено?</h2>
-        <mat-expansion-panel>
+        <mat-expansion-panel *ngFor="let item of tour.includedItems">
           <mat-expansion-panel-header>
-            <mat-icon class="included">check</mat-icon>
-            <h5>Питание</h5>
+            <mat-icon class="included">{{item.icon}}</mat-icon>
+            <h5>{{item.heading}}</h5>
           </mat-expansion-panel-header>
-          Правильное питание на протяжении 7ми дней и всё такое....
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-icon class="included">check</mat-icon>
-            <h5>Питание</h5>
-          </mat-expansion-panel-header>
-          Правильное питание на протяжении 7ми дней и всё такое....
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-icon class="included">check</mat-icon>
-            <h5>Питание</h5>
-          </mat-expansion-panel-header>
-          Правильное питание на протяжении 7ми дней и всё такое....
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-icon class="included">check</mat-icon>
-            <h5>Питание</h5>
-          </mat-expansion-panel-header>
-          Правильное питание на протяжении 7ми дней и всё такое....
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-icon class="excluded">close</mat-icon>
-            <h5>Питание</h5>
-          </mat-expansion-panel-header>
-          Правильное питание на протяжении 7ми дней и всё такое....
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-icon class="excluded">close</mat-icon>
-            <h5>Питание</h5>
-          </mat-expansion-panel-header>
-          Правильное питание на протяжении 7ми дней и всё такое....
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-icon class="excluded">close</mat-icon>
-            <h5>Питание</h5>
-          </mat-expansion-panel-header>
-          Правильное питание на протяжении 7ми дней и всё такое....
+            {{item.description}}
         </mat-expansion-panel>
       </div>
       <div class="stay-wrapper">
@@ -88,12 +46,12 @@
           <div class="hotel-icon">
             <mat-icon>hotel</mat-icon>
           </div>
-          <h5>Отель El-Haze 5 звёзд</h5>
+          <h5>{{tour.placeToStay}}</h5>
         </div>
       </div>
       <div>
         <h2>Кто будет с вами</h2>
-        <app-team-list [list]="team"></app-team-list>
+        <app-team-list class="short-list" [list]="team"></app-team-list>
       </div>
       <div class="reviews-wrapper">
         <h2>Отзывы о туре</h2>
@@ -113,79 +71,18 @@
           </div>
         </div>
         <div class="reviews-list">
-          <div class="review">
+          <div class="review" *ngFor="let review of tour.reviews">
             <div class="review-head">
               <div class="review-author">
-                <h5>ResellScott</h5>
-                <p>December 06, 2019</p>
+                <h5>{{review.name}}</h5>
+                <p>{{review.date | date : 'short' }}</p>
               </div>
               <div class="review-stars">
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
+                <mat-icon *ngFor="let star of review.rating">star</mat-icon>
               </div>
             </div>
             <div class="review-content">
-              <p>
-                The driver Mr. Omveer is a very patient and gentle person who drove safely and
-                kept to the speed limits. I felt very safe, despite the chaotic traffic on Indian roads. The hotels
-                Hotel
-                Ramada in Agra and Holiday inn in Jaipur ~ are very nice hotels with good rooms and service. The local
-                guides in each city are also good and I must commend Mr Tanveer of Agra. I highly Recommended Divyan
-                Holidays. Thank you. ResellScott
-              </p>
-            </div>
-          </div>
-          <div class="review">
-            <div class="review-head">
-              <div class="review-author">
-                <h5>ResellScott</h5>
-                <p>December 06, 2019</p>
-              </div>
-              <div class="review-stars">
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-              </div>
-            </div>
-            <div class="review-content">
-              <p>
-                The driver Mr. Omveer is a very patient and gentle person who drove safely and
-                kept to the speed limits. I felt very safe, despite the chaotic traffic on Indian roads. The hotels
-                Hotel
-                Ramada in Agra and Holiday inn in Jaipur ~ are very nice hotels with good rooms and service. The local
-                guides in each city are also good and I must commend Mr Tanveer of Agra. I highly Recommended Divyan
-                Holidays. Thank you. ResellScott
-              </p>
-            </div>
-          </div>
-          <div class="review">
-            <div class="review-head">
-              <div class="review-author">
-                <h5>ResellScott</h5>
-                <p>December 06, 2019</p>
-              </div>
-              <div class="review-stars">
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-              </div>
-            </div>
-            <div class="review-content">
-              <p>
-                The driver Mr. Omveer is a very patient and gentle person who drove safely and
-                kept to the speed limits. I felt very safe, despite the chaotic traffic on Indian roads. The hotels
-                Hotel
-                Ramada in Agra and Holiday inn in Jaipur ~ are very nice hotels with good rooms and service. The local
-                guides in each city are also good and I must commend Mr Tanveer of Agra. I highly Recommended Divyan
-                Holidays. Thank you. ResellScott
-              </p>
+              <p>{{review.text}}</p>
             </div>
           </div>
         </div>

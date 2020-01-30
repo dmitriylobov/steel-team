@@ -16,7 +16,7 @@ export class TourPageComponent {
   active$: Observable<Tour>;
 
   zoom = 7;
-  team = TEAM.slice(0, 3);
+  team = TEAM.slice(0, 2);
 
   constructor(private toursService: ToursService,
               private route: ActivatedRoute) {
