@@ -1,7 +1,10 @@
+import {TAGS} from '../blog/tags';
+
 export interface Tour {
   id: number;
   gallery: string[];
   lables: string[];
+  tags: TAGS[];
   name: string;
   start: Date;
   end: Date;
@@ -9,8 +12,9 @@ export interface Tour {
   fullPrice: number;
   discount: number;
   operator: string;
-  mapPlace: string;
-  itinerary: { heading: string, description: string }[];
+  mapPlace: { lat: number, lon: number }[];
+  places: { name: string, image: string }[];
+  itinerary: { icon: string, heading: string, description: string, className: string }[];
   includedItems: { heading: string, description: string }[];
   excludedItems: { heading: string, description: string }[];
   placeToStay: string;

@@ -15,10 +15,6 @@ import {TEAM} from '../../team/team-config';
 export class TourPageComponent {
   active$: Observable<Tour>;
 
-  lat = 45.730150;
-  lon = 34.225271;
-  lat1 = 46.230150;
-  lon1 = 35.225271;
   zoom = 7;
   team = TEAM.slice(0, 3);
 

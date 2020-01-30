@@ -173,6 +173,7 @@ p {
     max-width: 320px;
     margin-right: 2em;
     display: flex;
+    flex-direction: column;
     @include tablet {
       flex-direction: column-reverse;
       margin: 0;
