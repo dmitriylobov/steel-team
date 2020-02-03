@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "git-build": "ng build --prod --base-href=\"https://dmitriylobov.github.io/steel-team/\"",
-    "git-deploy": "angular-cli-ghpages --message=\"deploy complete\""
+    "git-deploy": "angular-cli-ghpages --message=\"deploy complete\"",
+    "check": "angular-cli-ghpages deploy --repo=https://github.com/dmitriylobov/steel-team.git --name=\"dmitriylobov\" --email=dimkalobov95@gmail.com"
   },
   "private": true,
   "dependencies": {
