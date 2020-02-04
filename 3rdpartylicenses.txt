@@ -179,6 +179,9 @@ THE SOFTWARE.
 ngx-flip
 MIT
 
+ngx-lazy-load-images
+MIT
+
 regenerator-runtime
 MIT
 MIT License
