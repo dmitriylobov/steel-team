@@ -16,7 +16,7 @@ import {FooterModule} from './features/footer/footer.module';
     FooterModule,
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

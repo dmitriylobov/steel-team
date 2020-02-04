@@ -61,8 +61,8 @@
               <mat-icon>flag</mat-icon>
             </div>
             <div class="tour-text">
-              <h5>Tour Operator</h5>
-              <p>Divyan Holidays</p>
+              <h5>Тур оператор</h5>
+              <p>{{tour.operator}}</p>
             </div>
           </div>
           <div class="tour-mark">
@@ -108,32 +108,30 @@
       </div>
     </div>
     <div class="text-column">
-      <h4>3 days</h4>
-      <h3>3 Days Private Golden Triangle Tour with 3 Star Hotel</h3>
-      <p class="destinition">From <strong>Delhi</strong> to <strong>Kair</strong></p>
+      <h4>{{tour.length}}</h4>
+      <h3>{{tour.name}}</h3>
       <div class="tour-details">
         <div class="detail">
-          <p>Tour operator</p>
-          <p>Divyan Holidays</p>
+          <p>Тур оператор</p>
+          <p>{{tour.operator}}</p>
         </div>
         <div class="detail">
-          <p>Max group size</p>
-          <p>10</p>
+          <p>Максимальный размер группы</p>
+          <p>{{tour.size}}</p>
         </div>
         <div class="detail">
-          <p>Age range</p>
-          <p>18 to 99</p>
+          <p>Возраст</p>
+          <p>от {{tour.age.from}} до {{tour.age.to}}</p>
         </div>
         <div class="detail">
-          <p>Tour id</p>
-          <p>174718</p>
+          <p>Номер тура</p>
+          <p>{{tour.id}}</p>
         </div>
       </div>
       <div class="price">
-        <p>Our savings: <strong>$4</strong></p>
+        <p>Ваша экономия: <strong>{{tour.discount}}₴</strong></p>
         <p class="price-from">
-          from
-          <strong>200$</strong>
+          Цена:<strong>от {{tour.fullPrice}}₴</strong>
         </p>
       </div>
     </div>

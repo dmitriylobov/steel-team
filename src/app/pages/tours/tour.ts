@@ -8,10 +8,12 @@ export interface Tour {
   name: string;
   start: Date;
   end: Date;
+  age: {from: number,to:number};
   size: number;
   fullPrice: number;
   discount: number;
   operator: string;
+  length: string;
   mapPlace: { lat: number, lon: number }[];
   places: { name: string, image: string }[];
   itinerary: { icon: string, heading: string, description: string, className: string }[];

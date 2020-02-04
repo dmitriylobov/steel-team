@@ -1,6 +1,6 @@
-<div class="gallery-wrapper">
-  <img class="gallery-image" alt="gallery image" *ngFor="let slide of images;index as i" [src]="slide"
-       [ngStyle]="{ 'z-index' : i}" [ngClass]="{'hidden': i !== currentIndex}"/>
+<div class="gallery-wrapper" lazy-load-images>
+  <img class="gallery-image" alt="gallery image" *ngFor="let slide of images;index as i" [attr.data-src]="slide"
+       [ngClass]="{'hidden': i !== currentIndex}"/>
   <div class="controll left" (click)="decrease()"><img src="assets/arrow.svg" alt="left"/></div>
   <div class="controll right" (click)="increase()"><img src="assets/arrow.svg" alt="right"/></div>
 </div>
