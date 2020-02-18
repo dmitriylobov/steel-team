@@ -1,24 +1,11 @@
-<app-rotated-card [top]="top" [bottom]="bottom"></app-rotated-card>
-
-<ng-template #top>
-  <div class="top-card">
-    <div class="image">
-      <img [src]="team.avatar" alt="team member"/>
-    </div>
-    <div class="description">
-      <h5 class="white">{{team.name}}</h5>
-      <p class="white">{{team.thumbnail}}</p>
-    </div>
+<div class="team-wrapper">
+  <div class="img">
+    <img [src]="team.avatar"/>
   </div>
-</ng-template>
-
-<ng-template #bottom>
-  <div class="bottom-card">
-    <div class="part-image">
-      <img [src]="team.image" alt="team member"/>
-    </div>
-    <div class="full-description">
-      <p>{{team.description}}</p>
-    </div>
+  <h3>{{team.name}}</h3>
+  <h4>{{team.position}}</h4>
+  <hr/>
+  <p>{{team.description}}</p>
+  <div class="social-wrapper">
   </div>
-</ng-template>
+</div>
