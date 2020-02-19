@@ -1,4 +1,4 @@
 <div class="team-list">
-  <app-team-card *ngFor="let member of list" [team]="member"></app-team-card>
+  <app-team-card *ngFor="let member of list" [team]="member" [routerLink]="'member/'+member.id"></app-team-card>
 </div>
 

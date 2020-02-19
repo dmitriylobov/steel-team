@@ -2,7 +2,8 @@
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   & > * {
-    margin: 5px 5px 5px 0;
+    margin: 2em 2em 2em 0;
   }
 }

@@ -5,4 +5,6 @@ export interface Member {
   description: string;
   image: string;
   avatar: string;
+  id: string;
+  fullDescription: string;
 }

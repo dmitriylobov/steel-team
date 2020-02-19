@@ -5,6 +5,13 @@
   background: #fff;
   box-shadow: 0 4px 19px 10px rgba(224, 224, 224, 0.76);
   width: 300px;
+  padding: 1em;
+  height: 400px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 hr {
@@ -28,6 +35,12 @@ hr {
 h3, h4, p {
   text-align: center;
   letter-spacing: .02em;
+  padding: .5em;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, FreeSans, sans-serif;
+}
+
+h3 {
+  font-weight: bold;
 }
 
 h4 {
