@@ -2,23 +2,8 @@
 
 .team-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-
-  .team-card {
-    width: 20%;
-    margin: 1% 2% 2% 0;
-    height: 350px;
-    cursor: pointer;
-
-    @include mobile {
-      height: 350px;
-      width: 100%;
-    }
-
-    @include tablet {
-      height: 350px;
-      width: 100%;
-    }
+  & > * {
+    margin: 2em 2em 2em 0;
   }
 }
