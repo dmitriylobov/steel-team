@@ -32,7 +32,6 @@ body {
 .btn-try-free {
   display: inline-block;
   width: 137px;
-  font-family: 'proximanovaregular';
   background: #fff344;
   background-image: -webkit-linear-gradient(top, #fff344, #ffd902);
   background-image: -moz-linear-gradient(top, #fff344, #ffd902);
@@ -74,13 +73,11 @@ body {
   font-size: 44px;
   padding: 104px 0 31px 0;
   position: relative;
-  font-family: 'proximanovabold';
   text-transform: uppercase
 }
 
 .section-3 h2 span {
   font-weight: normal;
-  font-family: 'proximanovalight'
 }
 
 .section-3 h2:before {
