@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {APPRAISAL_LIST} from '../reviews.config';
 import {of} from 'rxjs';
-import {MatDialog} from '@angular/material';
+import {MatDialog, MatSnackBar} from '@angular/material';
 import {ReviewsFormComponent} from '../reviews-form/reviews-form.component';
 import {HttpClient} from '@angular/common/http';
 
@@ -14,13 +14,17 @@ export class ReviewsPageComponent {
   reviewsList$ = of(APPRAISAL_LIST);
 
   constructor(private dialog: MatDialog,
-              private httpClient: HttpClient) {
+              private httpClient: HttpClient,
+              private matSnack: MatSnackBar) {
   }
 
   addReview() {
     const dialogRef = this.dialog.open(ReviewsFormComponent).afterClosed().subscribe((element) => {
-      console.log(element);
-      this.httpClient.post('https://usebasin.com/f/0807c29cfecb', element).subscribe(() => console.log('goto'));
+      this.httpClient.post('https://usebasin.com/f/0807c29cfecb', element).subscribe(() => {
+        this.matSnack.open('Спасибо! Ваш отзыв был отправлен на модерацию!');
+      }, () => {
+        this.matSnack.open('Спасибо! Ваш отзыв был отправлен на модерацию!');
+      });
     });
   }
 }

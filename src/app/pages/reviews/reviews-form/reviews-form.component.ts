@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {MatDialogRef} from '@angular/material';
 
 @Component({
@@ -13,12 +13,16 @@ export class ReviewsFormComponent {
 
   constructor(private dialogRef: MatDialogRef<ReviewsFormComponent>, fb: FormBuilder) {
     this.form = fb.group({
-      'name': new FormControl(''), 'tel': new FormControl(''), 'review': new FormControl(''),
+      'name': new FormControl('', [Validators.required]),
+      'tel': new FormControl('', [Validators.required]),
+      'review': new FormControl('', [Validators.required]),
     });
   }
 
   onSubmit(event) {
-    this.dialogRef.close(this.form.value);
     event.preventDefault();
+    if (this.form.valid) {
+      this.dialogRef.close(this.form.value);
+    }
   }
 }
