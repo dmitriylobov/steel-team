@@ -1,3 +1,5 @@
+@import '~src/screens';
+
 :host {
   display: block;
   margin: 0 auto;
@@ -9,11 +11,26 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .avatar {
-  width: 450px;
+  width: 40%;
+  padding: 0 2em 0;
   img {
+    width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
     width: 100%;
   }
 }
@@ -33,4 +50,21 @@
   img {
     width: 100%;
   }
+}
+
+h3, p, h4 {
+  font-size: 2em;
+  letter-spacing: 0.01em;
+  color: #2c3e50;
+  font-family: Helvetica, Arial, FreeSans, sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.25em;
+  font-weight: normal;
 }
