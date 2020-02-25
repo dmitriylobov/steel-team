@@ -1,10 +1,10 @@
-<form class="form-wrapper">
+<form class="form-wrapper" (submit)="onSubmit($event)" [formGroup]="form">
   <div class="credo-line">
     <mat-form-field>
-      <input matInput placeholder="ваше имя">
+      <input matInput placeholder="ваше имя" formControlName="name">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="номер телефона">
+      <input matInput placeholder="номер телефона" formControlName="tel">
     </mat-form-field>
   </div>
   <mat-form-field class="area">
@@ -13,7 +13,8 @@
       #autosize="cdkTextareaAutosize"
       cdkAutosizeMinRows="2"
       cdkAutosizeMaxRows="5"
-      matInput placeholder="Оставьте отзыв тут"></textarea>
+      matInput placeholder="Оставьте отзыв тут"
+      formControlName="review"></textarea>
   </mat-form-field>
   <div class="button-line">
     <button mat-raised-button color="primary">Отправить</button>

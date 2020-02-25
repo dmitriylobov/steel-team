@@ -7,6 +7,8 @@ import {RouterModule} from '@angular/router';
 import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatIconModule, MatInputModule} from '@angular/material';
 import {ReviewsFormComponent} from './reviews-form/reviews-form.component';
 import {TextFieldModule} from '@angular/cdk/text-field';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     TextFieldModule,
     MatIconModule,
     MatButtonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     MatDialogModule,
   ],
   entryComponents: [

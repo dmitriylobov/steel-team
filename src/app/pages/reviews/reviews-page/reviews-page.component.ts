@@ -3,6 +3,7 @@ import {APPRAISAL_LIST} from '../reviews.config';
 import {of} from 'rxjs';
 import {MatDialog} from '@angular/material';
 import {ReviewsFormComponent} from '../reviews-form/reviews-form.component';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-reviews-page',
@@ -12,10 +13,14 @@ import {ReviewsFormComponent} from '../reviews-form/reviews-form.component';
 export class ReviewsPageComponent {
   reviewsList$ = of(APPRAISAL_LIST);
 
-  constructor(private dialog: MatDialog) {
+  constructor(private dialog: MatDialog,
+              private httpClient: HttpClient) {
   }
 
   addReview() {
-    const dialogRef = this.dialog.open(ReviewsFormComponent);
+    const dialogRef = this.dialog.open(ReviewsFormComponent).afterClosed().subscribe((element) => {
+      console.log(element);
+      this.httpClient.post('https://usebasin.com/f/0807c29cfecb', element).subscribe(() => console.log('goto'));
+    });
   }
 }
