@@ -1,45 +1,19 @@
-
-body {
-  font-size: 1.4rem;
-  line-height: 2.4rem
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box
-}
-
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  position: relative
-}
-
-.clearfix {
+.group:after {
+  content: "";
+  display: table;
   clear: both;
-  width: 100%
 }
 
 .container {
   width: 965px;
   margin: 0 auto
 }
+
 .btn-try-free {
   display: inline-block;
   width: 137px;
   background: #fff344;
-  background-image: -webkit-linear-gradient(top, #fff344, #ffd902);
-  background-image: -moz-linear-gradient(top, #fff344, #ffd902);
-  background-image: -ms-linear-gradient(top, #fff344, #ffd902);
-  background-image: -o-linear-gradient(top, #fff344, #ffd902);
   background-image: linear-gradient(to bottom, #fff344, #ffd902);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   color: #22267b;
   font-size: 12px;
@@ -53,10 +27,6 @@ body {
 .btn-try-free:hover {
   color: #22267b;
   background: #ffd902;
-  background-image: -webkit-linear-gradient(top, #ffd902, #fff344);
-  background-image: -moz-linear-gradient(top, #ffd902, #fff344);
-  background-image: -ms-linear-gradient(top, #ffd902, #fff344);
-  background-image: -o-linear-gradient(top, #ffd902, #fff344);
   background-image: linear-gradient(to bottom, #ffd902, #fff344);
   text-decoration: none
 }
@@ -65,7 +35,7 @@ body {
   width: 100%;
   padding-bottom: 50px;
   background-size: cover;
-  background-image: url(https://cdn.instaplus.me/assets/bg_2-1a063cdec986ecc900f3624ace86f481f017f647501a03364c2d5e7225da0c7f.jpg);
+  background-image: url(src/assets/advantage-list/fon.jpg);
 }
 
 .section-3 h2 {
@@ -119,9 +89,6 @@ body {
   padding: 25px 0;
   text-transform: uppercase
 }
-
-
-
 
 
 @media only screen and (max-width: 667px) {
