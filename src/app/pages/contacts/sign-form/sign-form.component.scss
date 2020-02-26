@@ -12,6 +12,7 @@
       margin: 2px 2px 2px -34px;
       background: #222;
       color: #fff;
+      cursor: pointer;
     }
 
     &[type='email'] {
@@ -19,7 +20,7 @@
       width: 100%;
 
       &::placeholder {
-        font-family: Montserrat,'Arial Black',sans-serif;
+        font-family: Montserrat, 'Arial Black', sans-serif;
         font-size: 1em;
         color: rgb(0, 38, 62);
       }

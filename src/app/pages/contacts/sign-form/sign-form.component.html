@@ -1,4 +1,4 @@
-<form class="sign-form" [formGroup]="form">
+<form class="sign-form" [formGroup]="form" (submit)="followNews()">
   <input type="email" placeholder="Ваша почта" formControlName="email"/>
   <input type="submit" value="&#11162;"/>
 </form>
