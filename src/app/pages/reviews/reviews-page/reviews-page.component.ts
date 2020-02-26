@@ -4,6 +4,7 @@ import {of} from 'rxjs';
 import {MatDialog, MatSnackBar} from '@angular/material';
 import {ReviewsFormComponent} from '../reviews-form/reviews-form.component';
 import {HttpClient} from '@angular/common/http';
+import {filter} from 'rxjs/internal/operators';
 
 @Component({
   selector: 'app-reviews-page',
@@ -19,12 +20,17 @@ export class ReviewsPageComponent {
   }
 
   addReview() {
-    const dialogRef = this.dialog.open(ReviewsFormComponent).afterClosed().subscribe((element) => {
-      this.httpClient.post('https://usebasin.com/f/0807c29cfecb', element).subscribe(() => {
-        this.matSnack.open('Спасибо! Ваш отзыв был отправлен на модерацию!');
-      }, () => {
-        this.matSnack.open('Спасибо! Ваш отзыв был отправлен на модерацию!');
-      });
-    });
+    this.dialog.open(ReviewsFormComponent).afterClosed().pipe(
+      filter(element => element.name && element.review),
+    ).subscribe(this.sendReview.bind(this));
+  }
+
+  private sendReview(review) {
+    this.httpClient.post('https://usebasin.com/f/0807c29cfecb', review)
+      .subscribe(this.showSnackBar.bind(this), this.showSnackBar.bind(this));
+  }
+
+  private showSnackBar() {
+    this.matSnack.open('Спасибо! Ваш отзыв был отправлен на модерацию!', '', {duration: 300});
   }
 }

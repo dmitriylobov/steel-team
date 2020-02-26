@@ -20,10 +20,14 @@ h2, h3 {
   letter-spacing: .01em;
   line-height: 2;
   @include mobile {
-    line-height: 1.2;
+    line-height: 1;
+    padding-bottom: .5em;
+    font-size: 1.25em;
   }
   @include tablet {
-    line-height: 1.2;
+    line-height: 1;
+    padding-bottom: .5em;
+    font-size: 1.25em;
   }
 }
 
