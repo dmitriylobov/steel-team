@@ -506,3 +506,22 @@ app-team-list.short-list ::ng-deep .team-list .team-card {
     width: 100%;
   }
 }
+
+.red-link {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Montserrat, "Arial Black", sans-serif;
+  border-radius: 4px;
+  font-weight: 700;
+  @extend .active;
+  margin: .5em 0;
+  cursor: pointer;
+  padding: .75em 1.5em;
+  display: inline-block;
+}
+
+.active {
+  background-color: rgb(204, 9, 47);
+}

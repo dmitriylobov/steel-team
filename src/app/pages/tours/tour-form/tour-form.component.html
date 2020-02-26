@@ -1,0 +1,16 @@
+<form class="form-wrapper" (submit)="onSubmit($event)" [formGroup]="form">
+  <div class="credo-line">
+    <mat-form-field>
+      <input matInput placeholder="ваше имя" formControlName="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="номер телефона" formControlName="tel">
+    </mat-form-field>
+  </div>
+  <mat-form-field>
+    <input matInput placeholder="ваш возраст" formControlName="age">
+  </mat-form-field>
+  <div class="button-line">
+    <button mat-raised-button color="primary" class="red-link">Погнали!</button>
+  </div>
+</form>

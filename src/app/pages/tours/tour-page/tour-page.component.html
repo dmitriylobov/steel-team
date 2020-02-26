@@ -37,7 +37,7 @@
             <mat-icon class="included">{{item.icon}}</mat-icon>
             <h5>{{item.heading}}</h5>
           </mat-expansion-panel-header>
-            {{item.description}}
+          {{item.description}}
         </mat-expansion-panel>
       </div>
       <div class="stay-wrapper">
@@ -133,6 +133,9 @@
         <p class="price-from">
           Цена:<strong>от {{tour.fullPrice}}₴</strong>
         </p>
+      </div>
+      <div class="accept-button">
+        <a class="red-link" (click)="acceptTour()">Поехали!</a>
       </div>
     </div>
   </div>

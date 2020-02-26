@@ -10,6 +10,10 @@ import {AgmCoreModule} from '@agm/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
 import {TeamListModule} from '../team/teams/team-list.module';
+import {TourFormComponent} from './tour-form/tour-form.component';
+import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSnackBarModule} from '@angular/material';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 //  take a look into
 //  tourradar.com - list of tours(first part of a page)
@@ -18,7 +22,7 @@ import {TeamListModule} from '../team/teams/team-list.module';
 // for example
 
 @NgModule({
-  declarations: [ToursListComponent, TourItemComponent, TourPageComponent, ToursMainComponent],
+  declarations: [ToursListComponent, TourItemComponent, TourPageComponent, ToursMainComponent, TourFormComponent],
   imports: [
     CommonModule,
     RouterModule.forChild([
@@ -31,7 +35,17 @@ import {TeamListModule} from '../team/teams/team-list.module';
       apiKey: 'AIzaSyCcGAOo7lbNi93Vi6sd9EAyOo8o03so698'
     }),
     MatExpansionModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+  ],
+  entryComponents: [
+    TourFormComponent,
   ]
 })
 export class ToursModule {

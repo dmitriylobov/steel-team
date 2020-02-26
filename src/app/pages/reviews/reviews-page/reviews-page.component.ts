@@ -21,7 +21,7 @@ export class ReviewsPageComponent {
 
   addReview() {
     this.dialog.open(ReviewsFormComponent).afterClosed().pipe(
-      filter(element => element.name && element.review),
+      filter(element => element && element.name && element.review),
     ).subscribe(this.sendReview.bind(this));
   }
 
@@ -31,6 +31,6 @@ export class ReviewsPageComponent {
   }
 
   private showSnackBar() {
-    this.matSnack.open('Спасибо! Ваш отзыв был отправлен на модерацию!', '', {duration: 300});
+    this.matSnack.open('Спасибо! Ваш отзыв был отправлен на модерацию!', '', {duration: 1500});
   }
 }
