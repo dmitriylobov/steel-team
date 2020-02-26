@@ -6,7 +6,7 @@ import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {TEAM} from '../../team/team-config';
 import {MatDialog, MatSnackBar} from '@angular/material';
-import {TourFormComponent} from '../tour-form/tour-form.component';
+import {TourFormComponent} from '../../tour-form/tour-form/tour-form.component';
 import {filter} from 'rxjs/internal/operators';
 import {HttpClient} from '@angular/common/http';
 

@@ -10,10 +10,9 @@ import {AgmCoreModule} from '@agm/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
 import {TeamListModule} from '../team/teams/team-list.module';
-import {TourFormComponent} from './tour-form/tour-form.component';
-import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSnackBarModule} from '@angular/material';
-import {ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule, MatDialogModule, MatSnackBarModule} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
+import {TourFormModule} from '../tour-form/tour-form.module';
 
 //  take a look into
 //  tourradar.com - list of tours(first part of a page)
@@ -22,7 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
 // for example
 
 @NgModule({
-  declarations: [ToursListComponent, TourItemComponent, TourPageComponent, ToursMainComponent, TourFormComponent],
+  declarations: [ToursListComponent, TourItemComponent, TourPageComponent, ToursMainComponent],
   imports: [
     CommonModule,
     RouterModule.forChild([
@@ -35,17 +34,12 @@ import {HttpClientModule} from '@angular/common/http';
       apiKey: 'AIzaSyCcGAOo7lbNi93Vi6sd9EAyOo8o03so698'
     }),
     MatExpansionModule,
-    MatIconModule,
     MatDialogModule,
-    ReactiveFormsModule,
     MatButtonModule,
     MatSnackBarModule,
     HttpClientModule,
-    MatFormFieldModule,
-    MatInputModule,
-  ],
-  entryComponents: [
-    TourFormComponent,
+    TourFormModule,
+    MatIconModule,
   ]
 })
 export class ToursModule {
